@@ -7,7 +7,8 @@
   "type": "commonjs",
   "main": "main/index.js",
   "scripts": {
-    "start": "electron .",
+    "build:ui": "cd renderer && npm run build",
+    "start": "npm run build:ui && electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
